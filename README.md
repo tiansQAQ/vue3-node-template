@@ -1,6 +1,6 @@
 # vue3-node-template
 
-使用Vue3和NodeJS搭建的h5移动端单页和后端RESTful脚手架。
+使用Vue3和NodeJS搭建的h5移动端单页和后端RESTful模版。
 
 > 模板使用版本：`Node.js v10.17.0`
 
