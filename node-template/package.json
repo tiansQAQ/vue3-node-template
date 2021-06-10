@@ -1,0 +1,37 @@
+{
+  "name": "node-template",
+  "version": "0.1.0",
+  "description": "restful mvc template for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=8888 nodemon --inspect bin/www",
+    "stage": "cross-env pm2 start ecosystem.config.js --env staging",
+    "prod": "cross-env pm2 start ecosystem.config.js --env production",
+    "logs": "pm2 logs",
+    "stop": "pm2 stop ecosystem.config.js"
+  },
+  "keywords": [
+    "vue-node-template"
+  ],
+  "author": "tians",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^7.28.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-cors": "^0.0.16",
+    "koa-jwt": "^4.0.1",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "uuid": "^8.3.2"
+  }
+}
