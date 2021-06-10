@@ -12,12 +12,12 @@ module.exports = {
       max_memory_restart: '1G', // 最大内存限制数，超出自动重启
       // 测试环境
       env_staging: {
-        'PORT': 8002,
+        'PORT': 9528,
         'NODE_ENV': 'staging'
       },
       // 生产环境
       env_production: {
-        'PORT': 80,
+        'PORT': 9529,
         'NODE_ENV': 'production'
       }
     }

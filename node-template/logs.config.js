@@ -42,7 +42,7 @@ log4js.configure({
   },
   categories: {
     default: {
-      appenders: ['STDOUT', 'FILE_ALL'],
+      appenders: process.env.NODE_ENV !== 'production' ? ['STDOUT', 'FILE_ALL'] : ['FILE_ALL'],
       level: 'debug'
     },
     error: {
