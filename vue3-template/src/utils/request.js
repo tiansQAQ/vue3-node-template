@@ -9,7 +9,7 @@ const servie = axios.create({
 })
 
 // 添加请求拦截器
-axios.interceptors.request.use(config => {
+servie.interceptors.request.use(config => {
   if (store.getters.accessToken) {
     config.headers.accessToken = ''
   }
@@ -20,7 +20,7 @@ axios.interceptors.request.use(config => {
 })
 
 // 添加响应拦截器
-axios.interceptors.response.use(response => {
+servie.interceptors.response.use(response => {
   const res = response.data
   if (res.code !== 200) {
     return Promise.reject(res.msg || 'error')
