@@ -11,7 +11,6 @@ cd vue3-template
 
 npm install
 
-#
 npm run serve
 ```
 
@@ -28,7 +27,7 @@ cd node-template
 npm install
 ```
 
-首先需要在`src/config`文件夹里根据开发环境修改为自己的的数据库连接配置：
+首先需要在`src/config`文件夹里根据开发环境修改为自己的数据库连接配置：
 
 ```js
 const config = {
