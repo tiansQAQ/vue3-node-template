@@ -6,7 +6,7 @@ const path = require('path')
 
 let developmentLogConfig = {}
 // 测试环境增加标准输出流
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV !== 'production') {
   developmentLogConfig = {
     STDOUT: {
       type: 'stdout'
