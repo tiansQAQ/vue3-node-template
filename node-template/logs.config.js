@@ -26,7 +26,7 @@ log4js.configure({
   appenders: {
     ...developmentLogConfig,
     FILE_ALL: {
-      type: 'datefile', // log4js 会按照日期分日志，一天一个文件，每过一天都会把前一天的 all.log 重命名为 all.2021-06-03.log
+      type: 'dateFile', // log4js 会按照日期分日志，一天一个文件，每过一天都会把前一天的 all.log 重命名为 all.2021-06-03.log
       filename: fileAllName,
       backups: 10, // 日志最多保留10个
       maxLogSize: 10485760, // 文件最大值10M
@@ -34,7 +34,7 @@ log4js.configure({
       keepFileExt: true // 是否保持日志文件后缀名
     },
     FILE_ERROR: {
-      type: 'datefile',
+      type: 'dateFile',
       filename: fileErrorName,
       daysToKeep: 30,
       keepFileExt: true
